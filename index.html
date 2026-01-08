@@ -83,6 +83,35 @@ h1{
   color: var(--muted2);
 }
 
+/* About me card */
+.card.about p {
+  margin: 0 0 14px;
+  max-width: 68ch;              /* bessere Lesbarkeit */
+}
+
+.card.about ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+.card.about li {
+  margin: 6px 0;
+  color: rgba(11,31,58,0.9);
+}
+
+/* Badge */
+.card.about .badge {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(40,120,255,0.08);
+  border: 1px solid rgba(40,120,255,0.18);
+  color: rgba(11,31,58,0.85);
+  font-weight: 600;
+  font-size: 14px;
+}
+    
 ul{ margin: 0; padding-left: 18px; }
 li{ margin: 10px 0; color: var(--text); }
 
@@ -297,6 +326,22 @@ li strong{
         </ul>
       </section>
 
+      <section class="card about">
+  <h2>About me</h2>
+  <p>
+    I’m Florian — an independent advisor for HR & ERP transformations,
+    working across Europe and Latin America.
+  </p>
+
+  <ul>
+    <li>On-the-ground experience in <strong>Chile</strong></li>
+    <li>Project delivery across <strong>Peru and Brazil</strong></li>
+    <li>Deep understanding of cross-regional Workday–SAP landscapes</li>
+  </ul>
+
+  <div class="badge">Open for selected freelance engagements</div>
+</section>
+
       <section class="card">
         <h2>How I work</h2>
         <p style="margin:0;">
@@ -304,7 +349,7 @@ li strong{
         </p>
       </section>
 
-      <footer>© <span id="year-en"></span> fw-consulting.io | <a href="/imprint">Imprint / Impressum</a></footer>
+      <footer>© <span id="year-en"></span> fw-consulting.io | <a href="/imprint">Imprint</a></footer>
     </main>
 
     <!-- DE -->
@@ -325,6 +370,23 @@ li strong{
         </ul>
       </section>
 
+<section class="card about lang-de hidden">
+  <h2>Über mich</h2>
+
+  <p>
+    Ich bin Florian — unabhängiger Berater für HR- und ERP-Transformationen
+    mit Projekterfahrung in Europa und Lateinamerika.
+  </p>
+
+  <ul>
+    <li>Arbeit vor Ort in <strong>Chile</strong></li>
+    <li>Projektumsetzung in <strong>Peru und Brasilien</strong></li>
+    <li>Fundiertes Verständnis cross-regionaler Workday–SAP-Landschaften</li>
+  </ul>
+
+  <div class="badge">Offen für ausgewählte Freelance-Mandate</div>
+</section>
+      
       <section class="card">
         <h2>Wie ich arbeite</h2>
         <p style="margin:0;">
@@ -352,6 +414,23 @@ li strong{
         </ul>
       </section>
 
+<section class="card about lang-es hidden">
+  <h2>Sobre mí</h2>
+
+  <p>
+    Soy Florian — asesor independiente en transformaciones de HR y ERP,
+    con experiencia en Europa y Latinoamérica.
+  </p>
+
+  <ul>
+    <li>Experiencia directa en <strong>Chile</strong></li>
+    <li>Proyectos en <strong>Perú y Brasil</strong></li>
+    <li>Conocimiento profundo de entornos Workday–SAP cross-regionales</li>
+  </ul>
+
+  <div class="badge">Disponible para proyectos freelance seleccionados</div>
+</section>
+      
       <section class="card">
         <h2>Cómo trabajo</h2>
         <p style="margin:0;">
