@@ -21,11 +21,47 @@
   <meta name="twitter:description" content="Independent consultant for Workday & SAP transformations and integrations." />
   <meta name="twitter:image"       content="https://fw-consulting.io/assets/logo-fw-consulting.png" />
 
-  <!-- hreflang hints -->
-  <link rel="alternate" hreflang="en" href="https://fw-consulting.io/" />
-  <link rel="alternate" hreflang="de" href="https://fw-consulting.io/" />
-  <link rel="alternate" hreflang="es" href="https://fw-consulting.io/" />
+  <!-- hreflang: single URL serves all languages via client-side toggle -->
+  <link rel="alternate" hreflang="x-default" href="https://fw-consulting.io/" />
   <link rel="canonical" href="https://fw-consulting.io/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://fw-consulting.io/#person",
+    "name": "Florian Witt",
+    "url": "https://fw-consulting.io/",
+    "jobTitle": "Independent Consultant — Workday & SAP Transformations",
+    "email": "florian@fw-consulting.io",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Plöck 32",
+      "postalCode": "69117",
+      "addressLocality": "Heidelberg",
+      "addressCountry": "DE"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/florianwitt/"
+    ],
+    "knowsAbout": ["Workday", "SAP FI/CO", "SAP HCM", "HR system integrations", "Digital transformation"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "FW Consulting",
+    "url": "https://fw-consulting.io/",
+    "image": "https://fw-consulting.io/assets/logo-fw-consulting.png",
+    "description": "Independent consultant for Workday & SAP transformations and integrations. Helping organizations design, integrate and stabilize HR landscapes with deep integration experience and strong SAP FI/CO context understanding.",
+    "founder": {
+      "@id": "https://fw-consulting.io/#person"
+    },
+    "areaServed": "Worldwide",
+    "email": "florian@fw-consulting.io"
+  }
+  </script>
 
   <title>FW Consulting | Florian Witt</title>
 
