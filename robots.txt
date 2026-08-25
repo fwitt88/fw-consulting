@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /imprint/
+
+Sitemap: https://fw-consulting.io/sitemap.xml
