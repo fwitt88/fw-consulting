@@ -304,6 +304,17 @@
 
     .iconlink svg { width: 16px; height: 16px; fill: currentColor; }
 
+    .navlink {
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--muted);
+      border-bottom: none;
+      padding-bottom: 0;
+      transition: color .15s;
+    }
+
+    .navlink:hover { color: var(--accent); }
+
     .iconlink:hover {
       background: rgba(45,92,63,0.13);
       border-color: rgba(45,92,63,0.30);
@@ -332,6 +343,7 @@
     </div>
     <div class="topbar-right">
       <nav class="topbar-links" aria-label="Primary">
+        <a class="navlink" href="/blog/">Blog</a>
         <a class="iconlink" href="https://www.linkedin.com/in/florianwitt/" target="_blank" rel="noopener" title="LinkedIn">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4zM8.5 8h3.8v2.2h.05c.53-1 1.82-2.2 3.75-2.2C20.3 8 23 10.1 23 14.6V24h-4v-8.4c0-2-.04-4.6-2.8-4.6-2.8 0-3.2 2.2-3.2 4.4V24h-4z"/></svg>
         </a>
