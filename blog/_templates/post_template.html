@@ -1,0 +1,151 @@
+<!--
+  INTERNAL TEMPLATE – used by scripts/build_blog.py, not edited by hand per post.
+  To write a new post: add a markdown file to blog/_posts/ and run the build script.
+  See blog/_posts/README.md for the format.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="../../assets/favicon.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <meta name="description" content="{{DESCRIPTION}}" />
+
+  <meta property="og:type"        content="article" />
+  <meta property="og:url"         content="https://fw-consulting.io/blog/posts/{{SLUG}}.html" />
+  <meta property="og:title"       content="{{TITLE}} | FW Consulting" />
+  <meta property="og:description" content="{{DESCRIPTION}}" />
+  <meta property="og:image"       content="https://fw-consulting.io/assets/logo-fw-consulting.png" />
+
+  <title>{{TITLE}} | FW Consulting</title>
+
+  <style>
+    :root {
+      color-scheme: light;
+      --bg:        #f5f2ed;
+      --text:      #1e1e1a;
+      --muted:     #5e5b56;
+      --muted2:    #8a8780;
+      --card:      #faf8f5;
+      --card2:     #f0ece5;
+      --border:    rgba(30,30,26,0.10);
+      --shadow:    0 8px 24px rgba(30,30,26,0.07);
+      --shadow2:   0 1px 0 rgba(255,255,255,0.85) inset;
+      --accent:    #2d5c3f;
+      --link:      #2d5c3f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(900px 600px at 10% 0%,  rgba(90,122,94,0.07), transparent 55%),
+        radial-gradient(700px 500px at 92% 12%, rgba(90,122,94,0.05), transparent 55%),
+        var(--bg);
+      color: var(--text);
+      font-family: Aptos, "Segoe UI", system-ui, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    .wrap {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 56px 22px 64px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 22px;
+      margin: -56px -22px 36px;
+      background: rgba(245,242,237,0.70);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(30,30,26,0.07);
+    }
+
+    .logo { height: 56px; width: auto; display: block; }
+
+    .navlink {
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--muted);
+      border-bottom: none;
+      padding-bottom: 0;
+      transition: color .15s;
+    }
+    .navlink:hover { color: var(--accent); }
+
+    .post-date {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #3d5940;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: clamp(26px, 2.4vw, 36px);
+      line-height: 1.25;
+      margin: 0 0 28px;
+      letter-spacing: -0.2px;
+      font-weight: 700;
+    }
+
+    article p { font-size: 17px; color: var(--text); margin: 0 0 20px; }
+    article h2 { font-size: 22px; margin: 36px 0 14px; }
+    article h3 { font-size: 18px; margin: 28px 0 10px; }
+    article ol, article ul { margin: 0 0 20px; padding-left: 22px; }
+    article li { font-size: 17px; margin: 8px 0; }
+    article li p { margin: 0; }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(45,92,63,0.30);
+      padding-bottom: 2px;
+    }
+    a:hover { border-bottom-color: rgba(45,92,63,0.60); }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted2);
+    }
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <header class="topbar">
+    <a href="/"><img src="../../assets/logo-fw-consulting.png" alt="FW Consulting" class="logo" /></a>
+    <a class="navlink" href="/blog/">← Back to blog</a>
+  </header>
+
+  <main>
+    <article>
+      <div class="post-date">{{DATE_DISPLAY}}</div>
+      <h1>{{TITLE}}</h1>
+
+{{BODY}}
+    </article>
+  </main>
+
+  <footer>
+    <a class="navlink" href="/blog/">← Back to overview</a>
+  </footer>
+
+</div>
+</body>
+</html>

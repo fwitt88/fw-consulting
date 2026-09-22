@@ -1,0 +1,183 @@
+<!--
+  INTERNAL TEMPLATE – used by scripts/build_blog.py, not edited by hand per post.
+  To write a new post: add a markdown file to blog/_posts/ and run the build script.
+  See blog/_posts/README.md for the format.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="../../assets/favicon.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <meta name="description" content="Why cross-regional rollouts between headquarters and local teams quietly drift off course, and what changes once you design for power distance, language, and capacity instead of assuming everyone pushes back the same way." />
+
+  <meta property="og:type"        content="article" />
+  <meta property="og:url"         content="https://fw-consulting.io/blog/posts/when-silence-isnt-agreement.html" />
+  <meta property="og:title"       content="When Silence Isn't Agreement: Running International Projects Well | FW Consulting" />
+  <meta property="og:description" content="Why cross-regional rollouts between headquarters and local teams quietly drift off course, and what changes once you design for power distance, language, and capacity instead of assuming everyone pushes back the same way." />
+  <meta property="og:image"       content="https://fw-consulting.io/assets/logo-fw-consulting.png" />
+
+  <title>When Silence Isn't Agreement: Running International Projects Well | FW Consulting</title>
+
+  <style>
+    :root {
+      color-scheme: light;
+      --bg:        #f5f2ed;
+      --text:      #1e1e1a;
+      --muted:     #5e5b56;
+      --muted2:    #8a8780;
+      --card:      #faf8f5;
+      --card2:     #f0ece5;
+      --border:    rgba(30,30,26,0.10);
+      --shadow:    0 8px 24px rgba(30,30,26,0.07);
+      --shadow2:   0 1px 0 rgba(255,255,255,0.85) inset;
+      --accent:    #2d5c3f;
+      --link:      #2d5c3f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(900px 600px at 10% 0%,  rgba(90,122,94,0.07), transparent 55%),
+        radial-gradient(700px 500px at 92% 12%, rgba(90,122,94,0.05), transparent 55%),
+        var(--bg);
+      color: var(--text);
+      font-family: Aptos, "Segoe UI", system-ui, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    .wrap {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 56px 22px 64px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 22px;
+      margin: -56px -22px 36px;
+      background: rgba(245,242,237,0.70);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(30,30,26,0.07);
+    }
+
+    .logo { height: 56px; width: auto; display: block; }
+
+    .navlink {
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--muted);
+      border-bottom: none;
+      padding-bottom: 0;
+      transition: color .15s;
+    }
+    .navlink:hover { color: var(--accent); }
+
+    .post-date {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #3d5940;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: clamp(26px, 2.4vw, 36px);
+      line-height: 1.25;
+      margin: 0 0 28px;
+      letter-spacing: -0.2px;
+      font-weight: 700;
+    }
+
+    article p { font-size: 17px; color: var(--text); margin: 0 0 20px; }
+    article h2 { font-size: 22px; margin: 36px 0 14px; }
+    article h3 { font-size: 18px; margin: 28px 0 10px; }
+    article ol, article ul { margin: 0 0 20px; padding-left: 22px; }
+    article li { font-size: 17px; margin: 8px 0; }
+    article li p { margin: 0; }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(45,92,63,0.30);
+      padding-bottom: 2px;
+    }
+    a:hover { border-bottom-color: rgba(45,92,63,0.60); }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted2);
+    }
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <header class="topbar">
+    <a href="/"><img src="../../assets/logo-fw-consulting.png" alt="FW Consulting" class="logo" /></a>
+    <a class="navlink" href="/blog/">← Back to blog</a>
+  </header>
+
+  <main>
+    <article>
+      <div class="post-date">September 22, 2026</div>
+      <h1>When Silence Isn't Agreement: Running International Projects Well</h1>
+
+      <p>I've lived and worked on both sides of this – in Latin America and in Europe – and seen the friction from both directions, not as an outside observer applying a framework after the fact, but from inside delivery teams.</p>
+      <h2>The pattern</h2>
+      <p>On paper, it looks like alignment. A design decision is presented in a workshop, the room nods, the minutes say "no objections," and the project moves on. Weeks later, that same decision turns out to have been misaligned with how the local team actually works, and nobody raised a hand while there was still time to change course.</p>
+      <p>This repeats across international rollouts spanning Europe and Latin America. It isn't a question of competence or commitment. It's about what silence in the room actually means.</p>
+      <p>The sequence is almost always identical:</p>
+      <ol>
+      <li>A target process is defined during scoping, and no pushback surfaces.</li>
+      <li>User testing either happens under time pressure or gets compressed, but sign-off is granted either way.</li>
+      <li>Months after go-live, the operational reality emerges: the process was formally approved at every gate, but it was never truly adopted.</li>
+      </ol>
+      <h2>Why it happens</h2>
+      <h3>1. Power distance vs. open contradiction</h3>
+      <p>German and Northern European project delivery relies on the explicit expectation that disagreement gets voiced immediately. If an approach is flawed, someone is expected to say so – in the room, before sign-off. Absence of objection is treated as consent.</p>
+      <p>Many Latin American organizational cultures operate with higher power distance. Contradicting management or senior leads openly in a group setting carries social and political costs that simply don't exist in flatter teams. Staying quiet isn't passive agreement or lack of insight; inside that structure, it is often the only rational choice.</p>
+      <p>Put a standard "speak now or forever hold your peace" workshop format in front of that dynamic, and assumptions get rubber-stamped – not because they are solid, but because the room wasn't designed to catch them.</p>
+      <h3>2. The language hurdle</h3>
+      <p>Cross-border initiatives typically run in English. While most participants can communicate operational basics, raising a nuanced, high-stakes objection in a second or third language is an entirely different barrier.</p>
+      <p>Nobody wants to lose face in front of colleagues and leadership either. When in doubt, a quick "yes, understood" is the safer path than a detailed clarifying question that might expose a perceived language gap.</p>
+      <h3>3. The capacity imbalance: HQ vs. site reality</h3>
+      <p>Beyond culture and language sits a purely operational constraint: bandwidth. Headquarters typically staffs dedicated specialists – one lead for testing, one for security, one owner per sub-process. At the sites, the same scope often sits with one or two people wearing ten hats at once. I've seen this in Workday projects and in an SAP implementation where a single person owned Book-to-Record, procurement and HR processes at the same time.</p>
+      <p>These colleagues are genuinely versatile, but nobody can go deep into five process areas at once while also running 100% of their day-to-day operational workload. When central project teams expect a local generalist to interrogate a decision with the same depth as a dedicated HQ expert, a quiet "ok" isn't consensus. It's simply someone who has no capacity left to look closer.</p>
+      <h2>What changes when you design for it</h2>
+      <p>Naming the dynamic isn't enough on its own. Governance and workshop formats have to adapt to it.</p>
+      <ul>
+      <li>Move disagreement out of group settings: schedule brief 1:1 follow-ups right after key workshops. A private, low-stakes setting lets colleagues surface real risks without contradicting a manager or peers in public.</li>
+      <li>Ask for objections indirectly: replace "any concerns?" with "what would have to be true locally for this process to fail?" – a question about the plan, not a challenge to the person presenting it.</li>
+      <li>Treat sign-offs as provisional: build in a short, low-friction review window after each workshop instead of treating the session itself as final. That quiet window is where the real feedback tends to land.</li>
+      <li>Empower local bridges without filtering them out: a respected local lead who can voice the unspoken realities on the team's behalf is invaluable, but only if that person also has a direct, unfiltered channel to whoever is actually making the call.</li>
+      </ul>
+      <h2>The takeaway</h2>
+      <p>Cross-regional rollouts rarely stumble because local teams lack capability. They fail because project governance assumes everyone pushes back the same way, has equal bandwidth to interrogate a decision, and is equally comfortable doing so in a language that isn't their own.</p>
+      <p>A one-off cultural sensitivity workshop won't fix that. What works is designing the process around these realities – hierarchy, language, and site capacity – at every decision gate, not only the ones that are visibly about culture.</p>
+      <p>Planning a cross-regional rollout, or already feeling the friction between headquarters and your local teams? <a href="mailto:florian@fw-consulting.io">Get in touch</a> to talk through a project governance setup that surfaces the real picture early.</p>
+    </article>
+  </main>
+
+  <footer>
+    <a class="navlink" href="/blog/">← Back to overview</a>
+  </footer>
+
+</div>
+</body>
+</html>
